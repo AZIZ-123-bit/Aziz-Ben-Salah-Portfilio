@@ -1,0 +1,1 @@
+document.querySelectorAll('.cert-filters button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.cert-filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.cert-card').forEach(card=>{card.classList.toggle('hide',f!=='all' && card.dataset.category!==f)})}));
